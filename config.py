@@ -9,7 +9,7 @@ LOGIN_SYSTEM = bool(os.environ.get('LOGIN_SYSTEM', True)) # True or False
 
 if LOGIN_SYSTEM == False:
     # if login system is False then fill your tg account session below 
-    STRING_SESSION = os.environ.get("STRING_SESSION", "")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "BQIZinsAKYqa5IJ8AeGmUCCsUUi8z2YfQKsJu61LAngDcLw9i3cav3Sly1r6D1AfGNabWyfenA-Yu9rib3SdYpaTwZnQ5rQt0Id2gl4sSc9lOGl7mp2jYC-42X5EQQEdvDq31vwQ3jEndtTHupU-itFUuP3GBn0bKHE9Yh9OcHaSCqQmsrcgZanRHBtApshDzJo5pmXTEj3f1gDdzHmllxpi-o-QkgJ92hyWcbcxkRFUAMlZqHOVcSohcOelFkoNpICrofgwdalD8iLBjJT2IiJcwCla81J4d4uOX8v-CAMwDfasWLkYfY68i-tzygoJdyWsM1M2UespYNaBZ_doUEx3fC1TegAAAABe0sVXAA")
 else:
     STRING_SESSION = None
 
@@ -33,7 +33,7 @@ CHANNEL_ID = os.environ.get("CHANNEL_ID", "")
 # Your Mongodb Database Url
 # Warning - Give Db uri in deploy server environment variable, don't give in repo.
 DB_URI = os.environ.get("DB_URI", "") # Warning - Give Db uri in deploy server environment variable, don't give in repo.
-DB_NAME = os.environ.get("DB_NAME", "vjsavecontentbot")
+DB_NAME = os.environ.get("DB_NAME", "")
 
 # Increase time as much as possible to avoid floodwait, spamming and tg account ban issues.
 WAITING_TIME = int(os.environ.get("WAITING_TIME", "10")) # time in seconds
